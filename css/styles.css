@@ -1,6 +1,7 @@
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap');
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Satoshi', sans-serif;
@@ -13,6 +14,7 @@ body, html {
     margin-right: 50px;
     padding: 0 20px;
 }
+
 .container h1 {
     font-size: 60px;
     margin-bottom: 65px;
@@ -21,32 +23,38 @@ body, html {
     margin-left: auto;
     margin-right: auto;
 }
-.container p{
+
+.container p {
     font-size: 18px;
     margin-bottom: 40px;
     width: min(650px, 100%);
     margin-left: auto;
     margin-right: auto;
 }
+
 .container-description {
     text-align: center;
     margin: 0;
 }
+
 .container-encontrar {
     width: min(650px, 100%);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-.container-encontrar h2{
-  font-size: 30px;
+
+.container-encontrar h2 {
+    font-size: 30px;
     margin-bottom: 30px;
     color: #0404E2;
 }
-.container-encontrar p{
+
+.container-encontrar p {
     font-size: 18px;
     margin-bottom: 40px;
 }
+
 header {
     position: absolute;
     width: 100%;
@@ -64,32 +72,39 @@ nav {
     height: 60px;
     margin-top: 10px;
 }
+
 .nav-links a {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
     font-size: large;
 }
+
 .nav-links a:not(.nav-link-active) {
     font-weight: 500;
 }
+
 .nav-link-active {
     font-weight: 700;
 }
+
 .nav-links a:hover {
     font-weight: 700;
     transition: all 0.3s ease;
 }
+
 .nav-links-light a {
     color: #000;
     text-decoration: none;
     margin-left: 20px;
     font-size: large;
 }
+
 .nav-links-light a:hover {
     font-weight: 700;
     transition: all 0.3s ease;
 }
+
 .hero {
     background-image: url('https://storage.googleapis.com/finguru_static/calafate_hero_c86a46b8f4/calafate_hero_c86a46b8f4.jpg');
     background-size: cover;
@@ -117,6 +132,7 @@ nav {
     margin-right: auto;
     max-width: 600px;
 }
+
 .btn {
     background-color: #0404E2;
     color: white;
@@ -143,7 +159,7 @@ nav {
 
 .excursions {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 0 20px;
 }
 
@@ -164,17 +180,19 @@ nav {
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     min-height: 402px;
     border-radius: 24px;
     transition: all 0.1s ease;
 }
+
 .excursion-card:hover {
     transform: scale(1.02);
     transition: all 0.1s ease;
     cursor: pointer;
 }
+
 .excursion-card img {
     width: 100%;
     height: 100%;
@@ -200,22 +218,27 @@ nav {
     font-size: 30px;
     margin: 0;
 }
+
 .excursion-card-content p {
     color: #fff;
     font-size: 24px;
     margin: 0;
 }
-.about, .contact {
+
+.about,
+.contact {
     padding: 50px 0 0 0;
     text-align: center;
 }
 
-.about h2, .contact h2 {
+.about h2,
+.contact h2 {
     color: #0404E2;
     font-size: 30px;
 }
 
-.about p:not(.container p), .contact p:not(.container p) {
+.about p:not(.container p),
+.contact p:not(.container p) {
     max-width: 500px;
     margin: 0 auto;
     color: #606060;
@@ -232,7 +255,8 @@ form {
     margin: 0 auto;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 10px;
     border: none;
     border-radius: 12px;
@@ -280,71 +304,107 @@ footer {
     width: 35px;
     height: 35px;
 }
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent !important;;
+    background-color: transparent !important;
+    ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     z-index: 999;
-  }
+}
 
-  .logo a {
+.logo a {
     display: block;
-  }
+}
 
-  .nav-links {
+.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-  }
+}
 
-  .nav-link-active {
+.nav-link-active {
     font-weight: bold;
-  }
+}
 
-  .navbar-toggle {
+.navbar-toggle {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
     color: white;
     font-size: 1.5rem;
-  }
+}
 
-  .navbar-toggle-icon {
+.navbar-toggle-icon {
     display: block;
     width: 30px;
     height: 3px;
     background-color: white;
     margin-bottom: 5px;
-  }
+}
+
+.close-nav{
+    display: none;
+}
 
 @media (max-width: 768px) {
+    .container {
+        margin-left: unset;
+        margin-right: unset;
+        padding: 0 30px;
+    }
+
+    .close-nav{
+        display: block;
+        position: fixed;
+        top: 60px;
+        right: 60px;
+        cursor: pointer;
+    }
+
+    .hero-content h1{
+        font-size: 40px;
+        width: min(400px, 100%);
+    }
+    
+    .hero-content p{
+        width: min(400px, 100%);
+    }
+
     .nav-links {
         display: none;
-        position: absolute;
-        top: 60px;
+        position: fixed;
+        top: 0;
         left: 0;
         width: 100%;
-        background-color: #95B6E7;
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100%;
+        backdrop-filter: blur(10px);
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem;
-      }
-  
-      .nav-links.open {
+    }
+
+    .nav-links a {
+        font-size: 24px;
+    }
+
+    .nav-links.open {
         display: flex;
-      }
-  
-      .navbar-toggle {
+    }
+
+    .navbar-toggle {
         display: block;
-      }
+    }
+
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -352,9 +412,5 @@ footer {
 
     .footer-social {
         margin-top: 20px;
-    }
-
-    .btn {
-        min-width: 100%;
     }
 }
