@@ -310,7 +310,19 @@ footer {
     display: none;
 }
 
+.last-prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
 @media (max-width: 768px) {
+    .excursions{
+        width: 100%;
+    }
+
     .container {
         margin-left: unset;
         margin-right: unset;
@@ -383,5 +395,23 @@ footer {
     
     .btn{
         min-width: calc(100% - 60px);
+    }
+
+    .last-prices{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .last-prices h3{
+        text-decoration: line-through;
+        font-size: 27px;
+        opacity: 0.5;
+        margin: 0;
+    }
+
+    .last-prices h2{
+        margin: 0;
     }
 }
