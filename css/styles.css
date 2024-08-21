@@ -355,13 +355,14 @@ footer {
     display: none;
 }
 
+
 @media (max-width: 768px) {
     .container {
         margin-left: unset;
         margin-right: unset;
         padding: 0 30px;
     }
-
+    
     .close-nav{
         display: block;
         position: fixed;
@@ -369,7 +370,7 @@ footer {
         right: 60px;
         cursor: pointer;
     }
-
+    
     .hero-content h1{
         font-size: 40px;
         width: min(400px, 100%);
@@ -378,7 +379,7 @@ footer {
     .hero-content p{
         width: min(400px, 100%);
     }
-
+    
     .nav-links {
         display: none;
         position: fixed;
@@ -392,24 +393,24 @@ footer {
         align-items: flex-start;
         padding: 1rem;
     }
-
+    
     .nav-links a {
         font-size: 24px;
     }
-
+    
     .nav-links.open {
         display: flex;
     }
-
+    
     .navbar-toggle {
         display: block;
     }
-
+    
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-
+    
     .footer-social {
         margin-top: 20px;
     }

@@ -60,6 +60,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
 }
 
 .logo img {
@@ -98,60 +99,49 @@ nav {
     background-position: center;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     text-align: left;
     color: white;
+    padding: 0px 30px 0 30px;
 }
-.hero-content h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
-    width: min(800px, 100%);
-    margin-left: 60px;
-    margin-right: auto;
+
+.hero h1{
+    font-size: 40px;
+    width: min(400px, 100%);
 }
-.hero-content h2 {
-    font-size: 30px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-}    
-.hero-content p {
-    font-size: 24px;
-    margin-bottom: 30px;
-    margin-left: 60px;
-    margin-right: auto;
-    max-width: 600px;
+
+.hero p{
+    width: min(700px, 100%);
 }
-#left-separation { 
-    margin-left: 60px;
-} 
+
 #tachado { 
     text-decoration: line-through;
     opacity: 0.5;
-    margin-left: 10px;
 }
+
 #price { 
     font-size: 30px;
-    color: #000 !important;
 }
+
 #tachado-2 { 
     text-decoration: line-through;
     font-size: 27px;
-    color: #000 !important;
     opacity: 0.5;
-    margin-left: 10px;
 }
+
 .price {
     display: flex;
     flex-direction: row;
-    gap: 0;
+    gap: 10px;
 }
 .btns {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin-left: 60px;
 }
+
 .btn {
     background-color: #0404E2;
     color: white;
@@ -159,19 +149,18 @@ nav {
     text-decoration: none;
     border-radius: 24px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Satoshi', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     transition: background-color 0.3s;
     border: none;
     cursor: pointer;
-    width: min(250px, 100%);
+    min-width: 250px;
     height: 70px;
-    margin-bottom: 40px;
-    gap: 115px;    
+    gap: 30px;    
 }
 
 .btn:hover {
@@ -184,19 +173,18 @@ nav {
     text-decoration: none;
     border-radius: 24px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Satoshi', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     transition: background-color 0.3s;
     border: none;
     cursor: pointer;
-    width: min(250px, 100%);
     height: 70px;
     margin-bottom: 40px;
-    gap: 85px;
+    gap: 30px;
 }
 #img-chica {
     width: 500px;
@@ -340,10 +328,12 @@ footer {
     .hero-content h1{
         font-size: 40px;
         width: min(400px, 100%);
+        margin-left: 0;
     }
     
     .hero-content p{
         width: min(400px, 100%);
+        margin-left: 0;
     }
 
     .nav-links {
@@ -380,5 +370,18 @@ footer {
     .footer-social {
         margin-top: 20px;
     }
+        
+    .excursiones-img{
+        display: none;
+    }
 
+    .btns{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .btn{
+        min-width: calc(100% - 60px);
+    }
 }
