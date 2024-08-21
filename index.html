@@ -38,10 +38,13 @@
                 </div>
                 <div class="nav-links">
                     <a href="index.html" class="nav-link-active">Inicio</a>
-                    <a href="#excursiones">Excursiones</a>
+                    <a href="index.html#excursiones">Excursiones</a>
                     <a href="sobrenosotros.html">Sobre Nosotros</a>
                     <a href="#contacto">Contacto</a>
-                </div>
+                  </div>
+                  <button class="navbar-toggle">
+                    <span class="navbar-toggle-icon"></span>
+                  </button>
             </nav>
         </div>
     </header>
@@ -49,7 +52,7 @@
     <section class="hero" id="inicio">
         <div class="hero-content">
             <h1>Descubrí la magia del Calafate</h1>
-            <p>Vive experiencias inolvidables en el corazón del Sur argentino</p>
+            <p>Viví experiencias inolvidables en el corazón del Sur argentino</p>
             <a href="#excursiones" class="btn">Ver excursiones</a>
         </div>
     </section>
@@ -57,14 +60,15 @@
     <section class="excursions" id="excursiones">
         <div class="container">
             <h2>Excursiones más solicitadas</h2>
+            <p class="container-description">Presiona para ver más</p>
             <div class="excursion-grid">
-                <div class="excursion-card">
+                <a href="excursiones.html" class="excursion-card">
                     <img src="https://storage.googleapis.com/finguru_static/mini_trekking_7583466178/mini_trekking_7583466178.png" alt="Minitrekking">
                     <div class="excursion-card-content">
                         <h3>Minitrekking</h3>
                         <p>$210.000,0 ARS</p>
                     </div>
-                </div>
+                </a>
                 <div class="excursion-card">
                     <img src="https://storage.googleapis.com/finguru_static/vista_glaciar_09f9e89d73/vista_glaciar_09f9e89d73.png" alt="Visita al Glaciar">
                     <div class="excursion-card-content">
@@ -227,5 +231,12 @@
         </div>
     </footer>
 </body>
-
+<script>
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navLinks = document.querySelector('.nav-links');
+  
+    navbarToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </html>
