@@ -309,7 +309,12 @@ footer {
 .close-nav{
     display: none;
 }
-
+.last-prices h3 {
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-size: 24px;
+    margin-top: 60px;
+}
 .last-prices{
     display: flex;
     flex-direction: row;
